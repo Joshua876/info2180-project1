@@ -13,18 +13,49 @@ body {
 
 header {
     background-color: white;
+    font-size: 18px;
+}
+
+header .container{
+    display: flex;
+
+    align-items: center;
 }
 
 li a{
+    text-decoration: none;
     color: #6b7280;
+    padding: 15px;
 }
 
 li a:hover{
     color: #5A67D8;
 }
 
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.overview-hero .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
 .overview-hero{
     background-color: #E2E8F0;
+}
+
+.overview-hero img{
+    padding:20px;
+    height: 100px;
+    width: 130px;
+    float: left;
+}
+
+.overview-hero-image{
+    padding: 25px;
 }
 
 .learn-about h2{
@@ -35,9 +66,12 @@ li a:hover{
 .cards{
     display: grid;
     grid-template-columns: 240px 240px 240px;
+    grid-gap: 25px;
+    padding: 0px 30px 30px 5px;
 }
 
 .card{
+    padding: 25px;
     border-color: #E2E8F0;
     border-style: solid;
     box-shadow: 0 3px gray;
@@ -48,14 +82,33 @@ li a:hover{
     font-size: 21px;
 }
 
+.cards img{
+    height: 130px;
+    width: 180px;
+}
+
+.testing .container{
+    display: flex;
+    align-items: center;
+}
+
 .testing{
     background-color: #4A5568;
     color: white;
+    padding: 50px;
 }
 
+
 .cta{
-    background-color: 48BB78;
+    width: 200px;
+}
+
+.cta .btn{
+    text-decoration: none;
     border-radius: 5px;
+    background-color: #48BB78;
+    padding: 5px 10px;
+    color: white;
 }
 
 .stories h2{
@@ -70,17 +123,58 @@ li a:hover{
     font-size: 18px;
 }
 
+article{
+    align-items: center;
+    display: flex;
+}
+
+article img{
+    border-radius: 50%;
+    height: 150px;
+    width: 155px;
+}
+
+.article-body a{
+    text-decoration: none;
+}
+
+.article-body{
+    padding: 20px;
+}
+
 .newsletter{
     background-color: #48BB78;
     color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 form button{
+    padding: 10px;
     background-color: #5A67D8;
     color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input{
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form-group{
+    padding-right: 10px;
 }
 
 footer{
     background-color: #4A5568;
     color: white;
+    padding: 15px;
 }
